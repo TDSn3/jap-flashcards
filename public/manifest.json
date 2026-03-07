@@ -1,0 +1,11 @@
+{
+  "name": "Flashcards 日本語",
+  "short_name": "Flashcards",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f2ee",
+  "theme_color": "#f5f2ee",
+  "icons": [
+    { "src": "/vite.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

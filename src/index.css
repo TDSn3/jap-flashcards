@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+JP:wght@600&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #f5f2ee;
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  touch-action: pan-x pan-y;
+}
+
+@keyframes slideOutLeft  { to { opacity:0; transform: translateX(-56px) rotate(-3deg) scale(0.97); } }
+@keyframes slideOutRight { to { opacity:0; transform: translateX( 56px) rotate( 3deg) scale(0.97); } }
+@keyframes slideIn       { from { opacity:0; transform: translateY(8px) scale(0.98); } to { opacity:1; transform:none; } }
+
+.slide-out-left  { animation: slideOutLeft  .22s ease forwards; }
+.slide-out-right { animation: slideOutRight .22s ease forwards; }
+.slide-in        { animation: slideIn .28s ease both; }
